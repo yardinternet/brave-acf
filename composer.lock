@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "888fb7a48609a1cf891561168fd2be66",
+    "content-hash": "0414769571453f34c61c9eb7f3f11d87",
     "packages": [
         {
             "name": "brick/math",
@@ -5431,6 +5431,69 @@
             "time": "2025-12-02T11:56:42+00:00"
         },
         {
+            "name": "vinkla/extended-acf",
+            "version": "13.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vinkla/extended-acf.git",
+                "reference": "4f879e42ec3aa3633287a84785f50f822dca16b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vinkla/extended-acf/zipball/4f879e42ec3aa3633287a84785f50f822dca16b9",
+                "reference": "4f879e42ec3aa3633287a84785f50f822dca16b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.1",
+                "symfony/var-dumper": "^6.3"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Required to use the dump method (^6.3)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "13.8-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Extended\\ACF\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@doubledip.se"
+                }
+            ],
+            "description": "Register advanced custom fields with object-oriented PHP",
+            "keywords": [
+                "acf",
+                "advanced",
+                "custom",
+                "extended",
+                "fields",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/vinkla/extended-acf/issues",
+                "source": "https://github.com/vinkla/extended-acf/tree/13.8.0"
+            },
+            "time": "2023-10-02T07:32:52+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.6.3",
             "source": {
@@ -5587,6 +5650,67 @@
                 }
             ],
             "time": "2024-11-21T01:49:47+00:00"
+        },
+        {
+            "name": "yard/acf-registrar",
+            "version": "dev-feat/split",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:yardinternet/wp-acf-registrar.git",
+                "reference": "5b51fc459ba8991b5ac4967c36aac715c60a5d9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yardinternet/wp-acf-registrar/zipball/5b51fc459ba8991b5ac4967c36aac715c60a5d9c",
+                "reference": "5b51fc459ba8991b5ac4967c36aac715c60a5d9c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "vinkla/extended-acf": "^13.8"
+            },
+            "require-dev": {
+                "10up/wp_mock": "^0.4.2",
+                "pestphp/pest": "^2.36",
+                "php-stubs/acf-pro-stubs": "^6.3",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "yard/php-cs-fixer-rules": "^1.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Yard\\Acf\\Registrar\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Yard\\Acf\\Registrar\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "all": [
+                    "@test",
+                    "@analyse",
+                    "@format"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse --debug --memory-limit 1G"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test:coverage": [
+                    "XDEBUG_MODE=coverage vendor/bin/pest --coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP package to register ACF Field Groups, Forms and Option Pages",
+            "time": "2026-02-25T15:47:37+00:00"
         }
     ],
     "packages-dev": [
@@ -11006,7 +11130,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "yard/acf-registrar": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
@@ -11014,7 +11140,7 @@
     },
     "platform-dev": {},
     "platform-overrides": {
-        "php": "8.3"
+        "php": "8.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }

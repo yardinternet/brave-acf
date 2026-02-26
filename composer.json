@@ -1,11 +1,11 @@
 {
-	"name": "yard/skeleton-package",
+	"name": "yard/brave-acf",
 	"type": "package",
-	"description": ":package_description",
+	"description": "This is my package brave-acf",
 	"license": "MIT",
 	"support": {
-		"source": "https://github.com/yardinternet/skeleton-package",
-		"issues": "https://github.com/yardinternet/skeleton-package/issues"
+		"source": "https://github.com/yardinternet/brave-acf",
+		"issues": "https://github.com/yardinternet/brave-acf/issues"
 	},
 	"config": {
 		"sort-packages": true,
@@ -16,10 +16,17 @@
 			"php": "8.2"
 		}
 	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://satis.yard.nl"
+		}
+	],
 	"require": {
 		"php": ">=8.2",
 		"roots/acorn": "^4.3",
-		"spatie/laravel-package-tools": "^1.16"
+		"spatie/laravel-package-tools": "^1.16",
+		"yard/acf-registrar": "dev-feat/split"
 	},
 	"require-dev": {
 		"10up/wp_mock": "^0.4.2",
@@ -31,12 +38,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Yard\\SkeletonPackage\\": "src/"
+			"Yard\\Acf\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Yard\\SkeletonPackage\\Tests\\": "tests/"
+			"Yard\\Acf\\Tests\\": "tests/"
 		}
 	},
 	"scripts": {
@@ -58,7 +65,7 @@
 	"extra": {
 		"acorn": {
 			"providers": [
-				"Yard\\SkeletonPackage\\SkeletonPackageServiceProvider"
+				"Yard\\Acf\\AcfServiceProvider"
 			]
 		}
 	}
