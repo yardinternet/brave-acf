@@ -1,14 +1,19 @@
-# brave-acf
+# Brave ACF
 
 [![Code Style](https://github.com/yardinternet/brave-acf/actions/workflows/format-php.yml/badge.svg?no-cache)](https://github.com/yardinternet/brave-acf/actions/workflows/format-php.yml)
 [![PHPStan](https://github.com/yardinternet/brave-acf/actions/workflows/phpstan.yml/badge.svg?no-cache)](https://github.com/yardinternet/brave-acf/actions/workflows/phpstan.yml)
 [![Tests](https://github.com/yardinternet/brave-acf/actions/workflows/run-tests.yml/badge.svg?no-cache)](https://github.com/yardinternet/brave-acf/actions/workflows/run-tests.yml)
-[![Code Coverage Badge](https://github.com/yardinternet/brave-acf/blob/badges/coverage.svg)](https://github.com/yardinternet/brave-acf/actions/workflows/badges.yml)
-[![Lines of Code Badge](https://github.com/yardinternet/brave-acf/blob/badges/lines-of-code.svg)](https://github.com/yardinternet/brave-acf/actions/workflows/badges.yml)
 
 ## Requirements
 
 - [Acorn](https://github.com/roots/acorn) >= 4.0
+
+## Features
+
+- [x] Register ACF Field groups from config
+- [x] Register ACF Forms from config
+- [x] Register ACF Option pages from config
+
 
 ## Installation
 
