@@ -20,12 +20,12 @@ class AcfServiceProvider extends PackageServiceProvider
 	public function packageRegistered(): void
 	{
 		$this->app->bind(Registrar::class, function () {
-		$registrar = new Registrar();
-		$registrar->addFieldGroups(config('acf.field_groups'));
-		$registrar->addForms(config('acf.forms'));
-		$registrar->addOptionPages(config('acf.option_pages'));
+			$registrar = new Registrar();
+			$registrar->addFieldGroups(config('acf.field_groups'));
+			$registrar->addForms(config('acf.forms'));
+			$registrar->addOptionPages(config('acf.option_pages'));
 
-		return $registrar;
+			return $registrar;
 		});
 	}
 
