@@ -1,7 +1,7 @@
 {
 	"name": "yard/brave-acf",
 	"type": "package",
-	"description": "This is my package brave-acf",
+	"description": "Package to register ACF field groups, forms and option pages in a Laravel way.",
 	"license": "MIT",
 	"support": {
 		"source": "https://github.com/yardinternet/brave-acf",
