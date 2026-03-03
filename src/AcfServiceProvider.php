@@ -14,7 +14,7 @@ class AcfServiceProvider extends PackageServiceProvider
 	{
 		$package
 			->name('brave-acf')
-			->hasConfigFile();
+			->hasConfigFile('acf');
 	}
 
 	public function packageRegistered(): void
