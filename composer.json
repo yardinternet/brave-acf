@@ -17,12 +17,6 @@
 			"php": "8.2"
 		}
 	},
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://satis.yard.nl"
-		}
-	],
 	"require": {
 		"php": ">=8.2",
 		"roots/acorn": "^4.3",
