@@ -21,9 +21,9 @@ class AcfServiceProvider extends PackageServiceProvider
 	{
 		$this->app->bind(Registrar::class, function () {
 			$registrar = new Registrar();
-			$registrar->addFieldGroups(config('acf.field_groups'));
-			$registrar->addForms(config('acf.forms'));
-			$registrar->addOptionPages(config('acf.option_pages'));
+			$registrar->addFieldGroups(array_filter(config('acf.field_groups', [])));
+			$registrar->addForms(array_filter(config('acf.forms', [])));
+			$registrar->addOptionPages(array_filter(config('acf.option_pages', [])));
 
 			return $registrar;
 		});
