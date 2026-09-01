@@ -6,7 +6,7 @@
 
 ## Requirements
 
-- [Acorn](https://github.com/roots/acorn) >= 5.0
+- [Acorn](https://github.com/roots/acorn) 4 or 5
 
 ## Features
 
