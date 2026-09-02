@@ -3,6 +3,8 @@
 [![Code Style](https://github.com/yardinternet/brave-acf/actions/workflows/format-php.yml/badge.svg?no-cache)](https://github.com/yardinternet/brave-acf/actions/workflows/format-php.yml)
 [![PHPStan](https://github.com/yardinternet/brave-acf/actions/workflows/phpstan.yml/badge.svg?no-cache)](https://github.com/yardinternet/brave-acf/actions/workflows/phpstan.yml)
 [![Tests](https://github.com/yardinternet/brave-acf/actions/workflows/run-tests.yml/badge.svg?no-cache)](https://github.com/yardinternet/brave-acf/actions/workflows/run-tests.yml)
+![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/yard/brave-acf/php)
+![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/yard/brave-acf/roots%2Facorn)
 
 ## Requirements
 
