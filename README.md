@@ -6,10 +6,6 @@
 ![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/yard/brave-acf/php)
 ![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/yard/brave-acf/roots%2Facorn)
 
-## Requirements
-
-- [Acorn](https://github.com/roots/acorn) 4 or 5
-
 ## Features
 
 - [x] Register ACF Field groups from config
